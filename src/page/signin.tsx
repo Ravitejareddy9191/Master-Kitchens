@@ -8,12 +8,12 @@ export default function SignIn({ togglePage }) {
       <div className="absolute inset-0 bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-02/UQK3q4UK3Z.png)] bg-cover bg-no-repeat opacity-10 z-0" />
 
       {/* Login Card */}
-      <div className="flex w-[90%] max-w-[962px] h-auto bg-white rounded-xl shadow-lg overflow-hidden z-10">
+      <div className="flex w-[90%] max-w-[962px] h-[600px] bg-white rounded-xl shadow-lg overflow-hidden z-10">
         {/* Left Image */}
-        <div className="w-[480px] bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-02/TbNTTA49zM.png)] bg-cover bg-no-repeat" />
+        <div className="w-[600px] bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-02/TbNTTA49zM.png)] bg-cover bg-center bg-no-repeat" />
 
         {/* Right Form */}
-        <div className="flex flex-col justify-center items-center w-[480px] px-10 py-12 bg-white">
+        <div className="flex flex-col justify-center items-center w-[600px] px-10 py-12 bg-white overflow-y-auto">
           <div className="flex flex-col gap-6 w-full max-w-[380px] items-center">
             {/* Logo and Tagline */}
             <div className="flex flex-col gap-4 items-center">
@@ -62,7 +62,7 @@ export default function SignIn({ togglePage }) {
               </span>
               <div className="flex gap-1 text-[14px] font-medium">
                 <span className="text-[rgba(0,0,0,0.54)]">Create New Account?</span>
-                <span className="underline text-[#09091a] cursor-pointer">Sign Up</span>
+                <span className="underline text-[#09091a] cursor-pointer" onClick={togglePage}>Sign Up</span>
               </div>
             </div>
 

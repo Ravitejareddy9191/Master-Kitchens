@@ -3,7 +3,7 @@ import SignIn from './page/signin';
 import SignUp from './page/signup';
 
 export default function App() {
-  const [isSignup, setIsSignup] = useState(false);
+  const [isSignup, setIsSignup] = useState(true);
 
   const togglePage = () => {
     setIsSignup(!isSignup);
