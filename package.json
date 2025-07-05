@@ -1,5 +1,5 @@
 {
-  "name": "codia-react",
+  "name": "react",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -16,6 +16,8 @@
     "react-router-dom": "^7.6.3"
   },
   "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "18.2.0",
     "@emotion/react": "^11.14.0",
     "@tailwindcss/typography": "^0.5.10",
     "@vitejs/plugin-react": "^4.0.4",

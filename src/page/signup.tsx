@@ -61,7 +61,7 @@ export default function SignUp() {
             <div className="flex flex-col gap-4 items-center">
               <span className="text-2xl sm:text-3xl md:text-[28px] font-semibold text-[#09091a]">RCMS</span>
               <span className="text-sm sm:text-base md:text-[16px] text-[#323c47] text-center">
-                IRCTC Verified Master Kitchens
+                Rail Catering Management System
               </span>
             </div>
 
@@ -129,7 +129,7 @@ export default function SignUp() {
             <div className="flex flex-col items-center gap-2">
               <div className="h-[21px]"></div>
               <div className="flex gap-1 text-sm sm:text-[14px] font-medium">
-                <span className="text-[rgba(0,0,0,0.54)]">Already have an Account?</span>
+                <span className="text-[rgba(0,0,0,0.54)]">Already have a RCMS vendor account?</span>
                 <span
                   className="underline text-[#09091a] cursor-pointer"
                   onClick={() => navigate("/")}

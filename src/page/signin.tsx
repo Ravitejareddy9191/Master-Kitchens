@@ -29,7 +29,7 @@ export default function SignIn() {
       localStorage.setItem("access", response.data.access);
       localStorage.setItem("refresh", response.data.refresh);
 
-      alert("Login successful!");
+      // ✅ Directly go to dashboard — Welcome popup handled there
       navigate("/dashboard");
     } catch (err: any) {
       console.error(err.response?.data || err.message);
@@ -39,8 +39,10 @@ export default function SignIn() {
 
   return (
     <div className="main-container w-full min-h-screen bg-white flex justify-center items-center relative overflow-hidden">
+      {/* Background */}
       <div className="absolute inset-0 bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-02/UQK3q4UK3Z.png)] bg-cover bg-no-repeat opacity-10 z-0" />
 
+      {/* Login Form */}
       <div className="flex flex-col md:flex-row w-[80%] max-w-[962px] h-[600px] bg-white rounded-xl shadow-lg overflow-hidden z-10">
         {/* Left Image */}
         <div className="w-full md:w-1/2 h-[200px] md:h-auto bg-[url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-02/TbNTTA49zM.png)] bg-cover bg-center bg-no-repeat" />
@@ -51,11 +53,11 @@ export default function SignIn() {
           className="flex flex-col justify-center items-center w-full md:w-1/2 px-4 sm:px-6 md:px-10 py-8 sm:py-10 md:py-12 bg-white overflow-y-auto"
         >
           <div className="flex flex-col gap-6 w-full max-w-[380px] items-center">
-            {/* Logo and Tagline */}
+            {/* Logo */}
             <div className="flex flex-col gap-4 items-center">
               <span className="text-2xl sm:text-3xl md:text-[28px] font-semibold text-[#09091a]">RCMS</span>
               <span className="text-sm sm:text-base md:text-[16px] text-[#323c47] text-center">
-                IRCTC Verified Master Kitchens
+                Rail Catering Management System
               </span>
             </div>
 
@@ -111,7 +113,7 @@ export default function SignIn() {
                 Forgot Password?
               </span>
               <div className="flex gap-1 text-sm sm:text-[14px] font-medium">
-                <span className="text-[rgba(0,0,0,0.54)]">Create New Account?</span>
+                <span className="text-[rgba(0,0,0,0.54)]">Not Associated with RCMS as a vendor?</span>
                 <span
                   className="underline text-[#09091a] cursor-pointer"
                   onClick={() => navigate("/signup")}

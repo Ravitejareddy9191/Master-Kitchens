@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'users',
+    'email_processor',
+
 
 ]
 
@@ -146,3 +148,4 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'srreddy046@gmail.com'
 EMAIL_HOST_PASSWORD = 'fcnr scat exwm uoyn'
+
